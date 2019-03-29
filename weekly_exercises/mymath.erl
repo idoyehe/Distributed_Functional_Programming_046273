@@ -1,4 +1,5 @@
 -module(mymath).
+-author("Ido").
 -export([power/2, nth/2]).
 
 power(_,0) -> 1;
