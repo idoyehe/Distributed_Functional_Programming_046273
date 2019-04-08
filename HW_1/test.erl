@@ -23,13 +23,13 @@ test() ->
   14.141592653589793 = shapes:shapesArea({shapes, [Square1, Triangle2, Rectangle2, Circle2]}),
 
   try shapes:shapesArea({shapes, [Square1, Square1, Rectangle_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error0 -> erlang:display({error, caught, Error0})
   end,
 
   try shapes:shapesArea({shapes, [Square1, Square1, Rectangle_ill2]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error1 -> erlang:display({error, caught, Error1})
   end,
@@ -38,13 +38,13 @@ test() ->
   1 = shapes:squaresArea({shapes, [Circle2, Triangle1, Square1]}),
 
   try shapes:shapesArea({shapes, [Circle2, Triangle_ill, Square1]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error2 -> erlang:display({error, caught, Error2})
   end,
 
   try shapes:squaresArea({shapes, [Circle2, Triangle_ill, Square1]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error3 -> erlang:display({error, caught, Error3})
   end,
@@ -54,7 +54,7 @@ test() ->
   0.5 = shapes:trianglesArea({shapes, [Circle2, Triangle1, Square1]}),
 
   try shapes:trianglesArea({shapes, [Circle2, Triangle_ill, Square1]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error4 -> erlang:display({error, caught, Error4})
   end,
@@ -72,7 +72,7 @@ test() ->
   ({shapes, [Square1, Rectangle2]}) = F1({shapes, [Square1, Triangle1, Rectangle2]}),
 
   try F1({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error5 -> erlang:display({error, caught, Error5})
   end,
@@ -85,7 +85,7 @@ test() ->
   ({shapes, [Triangle1, Triangle2]}) = F2({shapes, [Square1, Triangle1, Triangle2]}),
 
   try F2({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error6 -> erlang:display({error, caught, Error6})
   end,
@@ -97,7 +97,7 @@ test() ->
   ({shapes, [Ellipse1, Circle2]}) = F3({shapes, [Ellipse1, Triangle1, Circle2]}),
 
   try F3({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error7 -> erlang:display({error, caught, Error7})
   end,
@@ -115,7 +115,7 @@ test() ->
   ({shapes, [Square1, Rectangle2]}) = F4({shapes, [Square1, Triangle1, Rectangle2]}),
 
   try F4({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error8 -> erlang:display({error, caught, Error8})
   end,
@@ -127,7 +127,7 @@ test() ->
   ({shapes, [Square1]}) = F5({shapes, [Square1, Triangle1, Rectangle2]}),
 
   try F5({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error9 -> erlang:display({error, caught, Error9})
   end,
@@ -139,7 +139,7 @@ test() ->
   ({shapes, [Triangle1, Triangle2]}) = F6({shapes, [Square1, Triangle1, Triangle2]}),
 
   try F6({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error10 -> erlang:display({error, caught, Error10})
   end,
@@ -152,7 +152,7 @@ test() ->
   ({shapes, [Ellipse1, Circle2]}) = F7({shapes, [Ellipse1, Triangle1, Circle2]}),
 
   try F7({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error11 -> erlang:display({error, caught, Error11})
   end,
@@ -164,7 +164,7 @@ test() ->
   ({shapes, [Circle2]}) = F8({shapes, [Ellipse1, Triangle1, Circle2]}),
 
   try F8({shapes, [Square1, Ellipse_ill]}) of
-    _ -> erlang:display("expected error not thrown")
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
   catch
     error:Error12 -> erlang:display({error, caught, Error12})
   end,
