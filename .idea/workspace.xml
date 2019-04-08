@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/emacs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW_1/shapes.erl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW_1/test.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_1/game.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_1/test_game.erl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/hw1_tests_for_students.beam" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/hw1_tests_for_students.beam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/test.beam" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/test.beam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/test.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/test.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW_1/test.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="172" selection-start-line="172" selection-end-line="172" />
+            <state relative-caret-position="116">
+              <caret line="166" column="76" selection-start-line="166" selection-start-column="76" selection-end-line="166" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="125" selection-start-line="25" selection-start-column="125" selection-end-line="25" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -50,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="24" column="18" selection-start-line="24" selection-end-line="25" />
+            <state relative-caret-position="359">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW_1/test_game.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,10 +107,12 @@
       <find>ellipse</find>
       <find>ok</find>
       <find>erlang:Error(&quot;not thorwen error found&quot;)</find>
+      <find>erlang:display(&quot;expected error not thrown&quot;)</find>
     </findStrings>
     <replaceStrings>
       <replace>erlang:Error(&quot;not thorwen error found&quot;)</replace>
       <replace>erlang:display(&quot;expected error not thrown&quot;)</replace>
+      <replace>erlang:display(&quot;expected error not thrown!!! Problem in your code&quot;)</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -112,6 +133,8 @@
         <option value="$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl" />
         <option value="$PROJECT_DIR$/HW_1/shapes.erl" />
         <option value="$PROJECT_DIR$/HW_1/test.erl" />
+        <option value="$PROJECT_DIR$/HW_1/game.erl" />
+        <option value="$PROJECT_DIR$/HW_1/test_game.erl" />
       </list>
     </option>
   </component>
@@ -231,7 +254,7 @@
       <workItem from="1553849710323" duration="1308000" />
       <workItem from="1554311100719" duration="5519000" />
       <workItem from="1554657430385" duration="445000" />
-      <workItem from="1554723403207" duration="9945000" />
+      <workItem from="1554723403207" duration="12391000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -254,11 +277,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554657738208</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding shapes module and tests">
+      <created>1554734198312</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554734198312</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17217000" />
+    <option name="totallyTimeSpent" value="19663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -269,7 +299,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.43919885" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14449213" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -278,7 +308,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.28915662" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.44578314" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -294,37 +324,6 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.43919885" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.43855423" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -333,7 +332,8 @@
     <MESSAGE value="make Erlang work with IntelliJ" />
     <MESSAGE value="adding all homework dirs" />
     <MESSAGE value="mac first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="mac first commit" />
+    <MESSAGE value="adding shapes module and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding shapes module and tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -341,13 +341,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/fib.erl" />
     <entry file="file://$PROJECT_DIR$/HW_3/fib.erl" />
-    <entry file="file://$PROJECT_DIR$/HW_1/main.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/main.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -377,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weekly_exercises/fib.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weekly_exercises/myList.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -405,17 +391,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl">
+    <entry file="file://$PROJECT_DIR$/HW_1/main.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="24" column="18" selection-start-line="24" selection-end-line="25" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_1/test.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="116">
+          <caret line="166" column="76" selection-start-line="166" selection-start-column="76" selection-end-line="166" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weekly_exercises/fib.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="125" selection-start-line="25" selection-start-column="125" selection-end-line="25" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/test_game.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
