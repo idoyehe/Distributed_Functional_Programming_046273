@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW_1/game.erl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW_1/test_game.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_1/test_all.erl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_1/hw1_tests_for_students.beam" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/hw1_tests_for_students.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_1/test.beam" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/test.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_1/test.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/test.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/game.beam" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/game.beam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/game.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/game.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/shapes.beam" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/shapes.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/shapes.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/test.beam" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/test.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_1/test_shapes.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_1/test_game.beam" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,53 +27,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weekly_exercises/fib.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="210">
               <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_1/shapes.erl">
+        <entry file="file://$PROJECT_DIR$/weekly_exercises/guardedFunction.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_1/test.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="166" column="76" selection-start-line="166" selection-start-column="76" selection-end-line="166" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="125" selection-start-line="25" selection-start-column="125" selection-end-line="25" selection-end-column="125" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HW_1/test_game.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -78,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weekly_exercises/mymath.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="60">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -87,8 +54,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weekly_exercises/myList.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="450">
+              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_1/test_shapes.erl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_1/test_game.erl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_1/shapes.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW_1/test_all.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -101,19 +105,6 @@
         <option value="Erlang Module" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ellipse</find>
-      <find>ok</find>
-      <find>erlang:Error(&quot;not thorwen error found&quot;)</find>
-      <find>erlang:display(&quot;expected error not thrown&quot;)</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>erlang:Error(&quot;not thorwen error found&quot;)</replace>
-      <replace>erlang:display(&quot;expected error not thrown&quot;)</replace>
-      <replace>erlang:display(&quot;expected error not thrown!!! Problem in your code&quot;)</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -130,24 +121,23 @@
         <option value="$PROJECT_DIR$/weekly_exercises/guardedFunction.erl" />
         <option value="$PROJECT_DIR$/weekly_exercises/mymath.erl" />
         <option value="$PROJECT_DIR$/weekly_exercises/myList.erl" />
-        <option value="$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl" />
         <option value="$PROJECT_DIR$/HW_1/shapes.erl" />
-        <option value="$PROJECT_DIR$/HW_1/test.erl" />
         <option value="$PROJECT_DIR$/HW_1/game.erl" />
-        <option value="$PROJECT_DIR$/HW_1/test_game.erl" />
+        <option value="$PROJECT_DIR$/HW_1/test_all.erl" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="119" />
+    <option name="y" value="44" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,6 +160,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,11 +168,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/HW_1" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/HW_1" />
       <recent name="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_3" />
       <recent name="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_2" />
       <recent name="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_1" />
@@ -204,21 +194,21 @@
       <module name="Distributed_Functional_Programming_046273" />
       <option name="allowRunningInParallel" value="false" />
       <option name="consoleArgs" value="" />
-      <option name="workingDirPath" value="$PROJECT_DIR$/HW_1" />
+      <option name="workingDirPath" value="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_1" />
       <method v="2" />
     </configuration>
     <configuration name="HW_2" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Distributed_Functional_Programming_046273" />
       <option name="allowRunningInParallel" value="false" />
       <option name="consoleArgs" value="" />
-      <option name="workingDirPath" value="$PROJECT_DIR$/HW_2" />
+      <option name="workingDirPath" value="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_2" />
       <method v="2" />
     </configuration>
     <configuration name="HW_3" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Distributed_Functional_Programming_046273" />
       <option name="allowRunningInParallel" value="false" />
       <option name="consoleArgs" value="" />
-      <option name="workingDirPath" value="$PROJECT_DIR$/HW_3" />
+      <option name="workingDirPath" value="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_3" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -252,9 +242,9 @@
       <option name="presentableId" value="Default" />
       <updated>1553849708301</updated>
       <workItem from="1553849710323" duration="1308000" />
-      <workItem from="1554311100719" duration="5519000" />
-      <workItem from="1554657430385" duration="445000" />
-      <workItem from="1554723403207" duration="12391000" />
+      <workItem from="1554311100719" duration="6221000" />
+      <workItem from="1554657599830" duration="507000" />
+      <workItem from="1554740583771" duration="1689000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -270,28 +260,28 @@
       <option name="project" value="LOCAL" />
       <updated>1553851007591</updated>
     </task>
-    <task id="LOCAL-00003" summary="mac first commit">
-      <created>1554657738208</created>
+    <task id="LOCAL-00003" summary="lecture 2 assignments">
+      <created>1554316760909</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1554657738208</updated>
+      <updated>1554316760909</updated>
     </task>
-    <task id="LOCAL-00004" summary="adding shapes module and tests">
-      <created>1554734198312</created>
+    <task id="LOCAL-00004" summary="adding HW_1 files">
+      <created>1554657781548</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1554734198312</updated>
+      <updated>1554657781548</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19663000" />
+    <option name="totallyTimeSpent" value="9725000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -299,7 +289,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14449213" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -308,7 +298,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.44578314" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.42903575" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -331,9 +321,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="make Erlang work with IntelliJ" />
     <MESSAGE value="adding all homework dirs" />
-    <MESSAGE value="mac first commit" />
-    <MESSAGE value="adding shapes module and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding shapes module and tests" />
+    <MESSAGE value="lecture 2 assignments" />
+    <MESSAGE value="adding HW_1 files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding HW_1 files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -341,6 +331,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/fib.erl" />
     <entry file="file://$PROJECT_DIR$/HW_3/fib.erl" />
+    <entry file="file://$PROJECT_DIR$/HW_1/main.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/main.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -363,91 +360,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weekly_exercises/guardedFunction.erl">
+    <entry file="file://$PROJECT_DIR$/weekly_exercises/fib.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="210">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weekly_exercises/myList.erl">
+    <entry file="file://$PROJECT_DIR$/weekly_exercises/guardedFunction.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="180">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weekly_exercises/mymath.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="60">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weekly_exercises/myList.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/test_shapes.erl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/test_game.erl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_1/shapes.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="600">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/main.erl">
+    <entry file="file://$PROJECT_DIR$/HW_1/test_all.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="232">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/test.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="166" column="76" selection-start-line="166" selection-start-column="76" selection-end-line="166" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weekly_exercises/fib.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/hw1_tests_for_students.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="125" selection-start-line="25" selection-start-column="125" selection-end-line="25" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/test_game.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>Erlang 21</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
