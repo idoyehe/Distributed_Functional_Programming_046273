@@ -1,37 +1,17 @@
 -module(shapes).
 -author("idoYe & ohadZ").
 
-
 -export([shapesArea/1, shapesFilter/1, shapesFilter2/1, squaresArea/1, trianglesArea/1]).
 
-%%validate all dimensions are positive
-dimValidator(D1, D2) ->
-  case D1 > 0 andalso D2 > 0 of
-    true -> true;
-    false -> erlang:error("Not a valid dimensions shape object")
-  end.
-
-%%validate all dimensions are positive and the pattern matching
-shapeValidatorInner({rectangle, {dim, D1, D2}}) -> dimValidator(D1, D2);
-shapeValidatorInner({triangle, {dim, D1, D2}}) -> dimValidator(D1, D2);
-shapeValidatorInner({ellipse, {radius, D1, D2}}) -> dimValidator(D1, D2).
-
-shapeValidator({shapes, []})->true;%%empty list is valid
-shapeValidator({shapes, [H | T]}) -> shapeValidator({shapes, [H | T]}, true).%%tail recursion
-shapeValidator({shapes, []}, ACC) -> ACC;
-shapeValidator({shapes, [H | T]}, ACC) -> shapeValidator({shapes, T}, ACC andalso shapeValidatorInner(H)).
-
 %%area calculations functions
-area({rectangle, {dim, Width, Height}}) -> Width * Height;
-area({triangle, {dim, Base, Height}}) -> Base * Height * 0.5;
-area({ellipse, {radius, Radius1, Radius2}}) -> math:pi() * Radius1 * Radius2.
+%%validate all dimensions are positive by guards
+area({rectangle, {dim, Width, Height}}) when Width > 0 andalso Height > 0 -> Width * Height;
+area({triangle, {dim, Base, Height}}) when Base > 0 andalso Height > 0 -> Base * Height * 0.5;
+area({ellipse, {radius, Radius1, Radius2}}) when Radius1 > 0 andalso Radius2 > 0 -> math:pi() * Radius1 * Radius2.
 
+%%area of empty list is 0
 shapesArea({shapes, []}) -> 0;
-%%first checking if object is valid
-shapesArea({shapes, [H | T]}) ->
-  case shapeValidator({shapes, [H | T]}) of
-    true -> shapesArea({shapes, [H | T]}, 0)
-  end.
+shapesArea({shapes, [H | T]}) -> shapesArea({shapes, [H | T]}, 0).
 shapesArea({shapes, []}, SUM) -> SUM;
 shapesArea({shapes, [H | T]}, SUM) -> shapesArea({shapes, T}, SUM + area(H)).
 
@@ -40,36 +20,28 @@ squaresArea({shapes, [H | T]}) -> shapesArea(filterSquare({shapes, [H | T]})).
 %% calculate all triangles areas by filter shapes list and then call "shapesArea"
 trianglesArea({shapes, [H | T]}) -> shapesArea(filterTriangle({shapes, [H | T]})).
 
+predSquare({Shape, {Dim, D1, D2}}) when D1 > 0 andalso D2 > 0 -> Shape == rectangle andalso Dim == dim andalso D1 =:= D2.
 filterSquare({shapes, []}) -> {shapes, []};
-filterSquare({shapes, [H | T]}) ->
-  case shapeValidator({shapes, [H | T]}) of
-    true -> {shapes, [{rectangle, {dim, D1, D1}} || {rectangle, {dim, D1, D1}} <- [H | T]]}
-  end.
+filterSquare({shapes, [H | T]}) -> {shapes, lists:filter(fun predSquare/1, [H | T])}.
 
 
-filterCircle({shapes, []}) ->{shapes, []};
-filterCircle({shapes, [H | T]}) ->
-  case shapeValidator({shapes, [H | T]}) of
-    true -> {shapes, [{ellipse, {radius, D1, D1}} || {ellipse, {radius, D1, D1}} <- [H | T]]}
-  end.
+predCircle({Shape, {Dim, R1, R2}}) when R1 > 0 andalso R2 > 0 -> Shape == ellipse andalso Dim == radius andalso R1 =:= R2.
+filterCircle({shapes, []}) -> {shapes, []};
+filterCircle({shapes, [H | T]}) -> {shapes, lists:filter(fun predCircle/1, [H | T])}.
 
-filterRectangle({shapes, []}) ->{shapes, []};
-filterRectangle({shapes, [H | T]}) ->
-  case shapeValidator({shapes, [H | T]}) of
-    true -> {shapes, [{rectangle, {dim, D1, D2}} || {rectangle, {dim, D1, D2}} <- [H | T]]}
-  end.
+predRectangle({Shape, {Dim, D1, D2}}) when D1 > 0 andalso D2 > 0 -> Shape == rectangle andalso Dim == dim.
+filterRectangle({shapes, []}) -> {shapes, []};
+filterRectangle({shapes, [H | T]}) -> {shapes, lists:filter(fun predRectangle/1, [H | T])}.
 
-filterEllipse({shapes, []}) ->{shapes, []};
-filterEllipse({shapes, [H | T]}) ->
-  case shapeValidator({shapes, [H | T]}) of
-    true -> {shapes, [{ellipse, {radius, D1, D2}} || {ellipse, {radius, D1, D2}} <- [H | T]]}
-  end.
 
-filterTriangle({shapes, []}) ->{shapes, []};
-filterTriangle({shapes, [H | T]}) ->
-  case shapeValidator({shapes, [H | T]}) of
-    true -> {shapes, [{triangle, {dim, D1, D2}} || {triangle, {dim, D1, D2}} <- [H | T]]}
-  end.
+predEllipse({Shape, {Dim, R1, R2}}) when R1 > 0 andalso R2 > 0 -> Shape == ellipse andalso Dim == radius.
+filterEllipse({shapes, []}) -> {shapes, []};
+filterEllipse({shapes, [H | T]}) -> {shapes, lists:filter(fun predEllipse/1, [H | T])}.
+
+
+predTriangle({Shape, {Dim, B, H}}) when B > 0 andalso H > 0 -> Shape == triangle andalso Dim == dim.
+filterTriangle({shapes, []}) -> {shapes, []};
+filterTriangle({shapes, [H | T]}) -> {shapes, lists:filter(fun predTriangle/1, [H | T])}.
 
 
 shapesFilter(rectangle) -> fun filterRectangle/1;

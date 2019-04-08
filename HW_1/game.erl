@@ -4,8 +4,7 @@
 %% API
 -export([canWin/1, nextMove/1, explanation/0]).
 
-canWin(N) when N > 0 -> canWinAux(N);
-canWin(N) when N =< 0 -> erlang:error("number of matches is not valid").
+canWin(N) when is_integer(N) andalso N > 0 -> canWinAux(N).
 
 canWinAux(1) -> true;
 canWinAux(2) -> true;
