@@ -7,6 +7,7 @@
 
 test() ->
 
+
   Square1 = {rectangle, {dim, 1, 1}},
   Rectangle2 = {rectangle, {dim, 2, 4}},
   Rectangle_ill = {rectangle, {dim, 1, 0}},
@@ -17,6 +18,8 @@ test() ->
   Ellipse1 = {ellipse, {radius, 1, 2}},
   Circle2 = {ellipse, {radius, 1, 1}},
   Ellipse_ill = {ellipse, {radius, -1, 1}},
+  NotValidObject = {t, {t, 1, 1}},
+  NotShape = {notShape, {radius, -1, 1}},
 
   0 = shapes:shapesArea({shapes, []}),
   1 = shapes:shapesArea({shapes, [Square1]}),
@@ -169,4 +172,112 @@ test() ->
     error:Error12 -> erlang:display({error, caught, Error12})
   end,
 
+
+  try shapes:shapesArea({shapes, [NotShape]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error13 -> erlang:display({error, caught, Error13})
+  end,
+
+  try shapes:shapesArea({shapes, [NotValidObject]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error14 -> erlang:display({error, caught, Error14})
+  end,
+
+  try shapes:shapesArea({notShapes, [Square1, Triangle2, Rectangle2, Circle2]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error15 -> erlang:display({error, caught, Error15})
+  end,
+
+  try F4({shapes, [NotShape]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error16 -> erlang:display({error, caught, Error16})
+  end,
+
+  try F4({shapes, [NotValidObject]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error17 -> erlang:display({error, caught, Error17})
+  end,
+
+  try F4({notShapes, [Square1, Triangle2, Rectangle2, Circle2]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error18 -> erlang:display({error, caught, Error18})
+  end,
+
+  try F5({shapes, [NotShape]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error19 -> erlang:display({error, caught, Error19})
+  end,
+
+  try F5({shapes, [NotValidObject]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error20 -> erlang:display({error, caught, Error20})
+  end,
+
+  try F5({notShapes, [Square1, Triangle2, Rectangle2, Circle2]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error21 -> erlang:display({error, caught, Error21})
+  end,
+
+  try F6({shapes, [NotShape]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error22 -> erlang:display({error, caught, Error22})
+  end,
+
+  try F6({shapes, [NotValidObject]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error23 -> erlang:display({error, caught, Error23})
+  end,
+
+  try F6({notShapes, [Square1, Triangle2, Rectangle2, Circle2]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error24 -> erlang:display({error, caught, Error24})
+  end,
+
+  try F7({shapes, [NotShape]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error25 -> erlang:display({error, caught, Error25})
+  end,
+
+  try F7({shapes, [NotValidObject]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error26 -> erlang:display({error, caught, Error26})
+  end,
+
+  try F7({notShapes, [Square1, Triangle2, Rectangle2, Circle2]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error27 -> erlang:display({error, caught, Error27})
+  end,
+
+  try F8({shapes, [NotShape]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error28 -> erlang:display({error, caught, Error28})
+  end,
+
+  try F8({shapes, [NotValidObject]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error29 -> erlang:display({error, caught, Error29})
+  end,
+
+  try F8({notShapes, [Square1, Triangle2, Rectangle2, Circle2]}) of
+    _ -> erlang:display("expected error not thrown!!! Problem in your code")
+  catch
+    error:Error30 -> erlang:display({error, caught, Error30})
+  end,
   ok.

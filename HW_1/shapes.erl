@@ -20,26 +20,31 @@ squaresArea({shapes, [H | T]}) -> shapesArea(filterSquare({shapes, [H | T]})).
 %% calculate all triangles areas by filter shapes list and then call "shapesArea"
 trianglesArea({shapes, [H | T]}) -> shapesArea(filterTriangle({shapes, [H | T]})).
 
-predSquare({Shape, {Dim, D1, D2}}) when D1 > 0 andalso D2 > 0 -> Shape == rectangle andalso Dim == dim andalso D1 =:= D2.
+predSquare({Shape, {Dim, D1, D2}}) when D1 > 0 andalso D2 > 0 andalso (Shape == triangle orelse Shape == ellipse orelse Shape == rectangle) ->
+  Shape == rectangle andalso Dim == dim andalso D1 =:= D2.
 filterSquare({shapes, []}) -> {shapes, []};
 filterSquare({shapes, [H | T]}) -> {shapes, lists:filter(fun predSquare/1, [H | T])}.
 
 
-predCircle({Shape, {Dim, R1, R2}}) when R1 > 0 andalso R2 > 0 -> Shape == ellipse andalso Dim == radius andalso R1 =:= R2.
+predCircle({Shape, {Dim, R1, R2}}) when R1 > 0 andalso R2 > 0 andalso (Shape == triangle orelse Shape == ellipse orelse Shape == rectangle) ->
+  Shape == ellipse andalso Dim == radius andalso R1 =:= R2.
 filterCircle({shapes, []}) -> {shapes, []};
 filterCircle({shapes, [H | T]}) -> {shapes, lists:filter(fun predCircle/1, [H | T])}.
 
-predRectangle({Shape, {Dim, D1, D2}}) when D1 > 0 andalso D2 > 0 -> Shape == rectangle andalso Dim == dim.
+predRectangle({Shape, {Dim, D1, D2}}) when D1 > 0 andalso D2 > 0 andalso (Shape == triangle orelse Shape == ellipse orelse Shape == rectangle) ->
+  Shape == rectangle andalso Dim == dim.
 filterRectangle({shapes, []}) -> {shapes, []};
 filterRectangle({shapes, [H | T]}) -> {shapes, lists:filter(fun predRectangle/1, [H | T])}.
 
 
-predEllipse({Shape, {Dim, R1, R2}}) when R1 > 0 andalso R2 > 0 -> Shape == ellipse andalso Dim == radius.
+predEllipse({Shape, {Dim, R1, R2}}) when R1 > 0 andalso R2 > 0 andalso (Shape == triangle orelse Shape == ellipse orelse Shape == rectangle) ->
+  Shape == ellipse andalso Dim == radius.
 filterEllipse({shapes, []}) -> {shapes, []};
 filterEllipse({shapes, [H | T]}) -> {shapes, lists:filter(fun predEllipse/1, [H | T])}.
 
 
-predTriangle({Shape, {Dim, B, H}}) when B > 0 andalso H > 0 -> Shape == triangle andalso Dim == dim.
+predTriangle({Shape, {Dim, B, H}}) when B > 0 andalso H > 0 andalso (Shape == triangle orelse Shape == ellipse orelse Shape == rectangle) ->
+  Shape == triangle andalso Dim == dim.
 filterTriangle({shapes, []}) -> {shapes, []};
 filterTriangle({shapes, [H | T]}) -> {shapes, lists:filter(fun predTriangle/1, [H | T])}.
 
