@@ -24,4 +24,4 @@ nextMove(N) ->
   end.
 
 explanation() ->
-  {"The difficulty is we have to check both possiable moves taking 1 match or taking 2 matchs therefore 2 indepedet recursive calls are needed for N-1 and N-2 and not just 1"}.
+  {"The difficulty is we have to check both possiable moves taking 1 match or taking 2 matchs therefore 2 independent recursive calls are needed for N-1 and N-2 and not just 1"}.
