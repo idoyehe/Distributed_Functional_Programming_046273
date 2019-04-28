@@ -38,7 +38,6 @@ loop() ->
   receive
     {type, From, Request} ->% message processing
       From ! {self(), process_request(Request, From)},
-      io:format("sendt ~n"),
       loop();
     {stop, From} ->% do cleanup here
       cleanup(),
