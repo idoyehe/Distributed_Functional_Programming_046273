@@ -1,6 +1,6 @@
 -module(matrix).
 
--export([matrixMul/4]).
+-export([matrixMul/2]).
 
 % generate a matrix with X rows and Y columns with zeros
 getZeroMat(X, Y) ->
@@ -29,22 +29,17 @@ dotProduct(Vect1, RowIndex, Vect2, ColIndex, Pid) when
   Pid ! {RowIndex, ColIndex, lists:sum(lists:zipwith(fun(X, Y) -> X * Y end, tuple2list(Vect1), tuple2list(Vect2)))}.
 
 % creating new process for each Col to multiplied by given Row
-colLoop(Row, RowIndex, Matrix2, ColIndex, Pid) ->
-  case ColIndex > 0 of
-    true ->
-      spawn(fun() -> dotProduct(Row, RowIndex, getCol(Matrix2, ColIndex), ColIndex, Pid) end),
-      colLoop(Row, RowIndex, Matrix2, ColIndex - 1, Pid);
-    false -> ok
-  end.
+colLoop(_, _, _, ColIndex, _) when ColIndex =< 0 -> ok;
+colLoop(Row, RowIndex, Matrix2, ColIndex, Pid) when ColIndex > 0 ->
+  spawn(fun() -> dotProduct(Row, RowIndex, getCol(Matrix2, ColIndex), ColIndex, Pid) end),
+  colLoop(Row, RowIndex, Matrix2, ColIndex - 1, Pid).
+
 
 % loop each Row in Matrix1 and call colLoop
-rowLoop(Matrix1, RowIndex, Matrix2, Pid) ->
-  case RowIndex > 0 of
-    true ->
-      colLoop(getRow(Matrix1, RowIndex), RowIndex, Matrix2, tuple_size(element(1, Matrix2)), Pid),
-      rowLoop(Matrix1, RowIndex - 1, Matrix2, Pid);
-    false -> ok
-  end.
+rowLoop(_, RowIndex, _, _) when RowIndex =< 0 -> ok;
+rowLoop(Matrix1, RowIndex, Matrix2, Pid) when RowIndex > 0 ->
+  colLoop(getRow(Matrix1, RowIndex), RowIndex, Matrix2, tuple_size(element(1, Matrix2)), Pid),
+  rowLoop(Matrix1, RowIndex - 1, Matrix2, Pid).
 
 % collecting all spawned processes into the matrix
 matrixMulAux(0, TemplateMat) -> TemplateMat;
@@ -56,8 +51,8 @@ matrixMulAux(State, TemplateMat) ->
 
 
 % starting the loop, generating the template and collect all results into matrix
-matrixMul(Matrix1, Matrix2, Pid, MsgRef) ->
+matrixMul(Matrix1, Matrix2) ->
   rowLoop(Matrix1, tuple_size(Matrix1), Matrix2, self()),
   TemplateMat = getZeroMat(tuple_size(Matrix1), tuple_size(element(1, Matrix2))),
   Total = tuple_size(Matrix1) * tuple_size(element(1, Matrix2)),
-  Pid ! {MsgRef, matrixMulAux(Total, TemplateMat)}.
+  matrixMulAux(Total, TemplateMat).

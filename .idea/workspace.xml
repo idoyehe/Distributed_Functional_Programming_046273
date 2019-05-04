@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="" />
+    <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/matrix.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/matrix.erl" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +19,17 @@
     <favorites_list name="Distributed_Functional_Programming_046273" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,8 +66,8 @@
         <option value="$PROJECT_DIR$/HW_1/game.erl" />
         <option value="$PROJECT_DIR$/weekly_exercises/client_server.erl" />
         <option value="$PROJECT_DIR$/HW_2/matrixUtils.erl" />
-        <option value="$PROJECT_DIR$/HW_2/matrix.erl" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/HW_2/matrix.erl" />
       </list>
     </option>
   </component>
@@ -69,6 +82,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,7 +104,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -190,6 +203,9 @@
       <workItem from="1555841558463" duration="599000" />
       <workItem from="1556473649237" duration="367000" />
       <workItem from="1556983114032" duration="9891000" />
+      <workItem from="1556993843843" duration="239000" />
+      <workItem from="1556994769152" duration="359000" />
+      <workItem from="1556996561908" duration="207000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -282,21 +298,29 @@
       <option name="project" value="LOCAL" />
       <updated>1556993443014</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="deleting all beam files">
+      <created>1556994065979</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556994065979</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30659000" />
+    <option name="totallyTimeSpent" value="31464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.20469083" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -305,7 +329,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.08667389" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.24052005" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -336,7 +360,8 @@
     <MESSAGE value="change validation to function guards and update zip file" />
     <MESSAGE value="adding more test" />
     <MESSAGE value="adding matrix parallel multiplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding matrix parallel multiplication" />
+    <MESSAGE value="deleting all beam files" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleting all beam files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -345,13 +370,7 @@
     <entry file="file://$PROJECT_DIR$/HW_2/fib.erl" />
     <entry file="file://$PROJECT_DIR$/HW_3/fib.erl" />
     <entry file="file://$PROJECT_DIR$/HW_1/main.erl" />
-    <entry file="file://$PROJECT_DIR$/HW_2/main.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/main.erl" />
     <entry file="file://$PROJECT_DIR$/HW_3/main.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -433,13 +452,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/matrixUtils.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/matrixUtils.erl" />
     <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -454,17 +467,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
