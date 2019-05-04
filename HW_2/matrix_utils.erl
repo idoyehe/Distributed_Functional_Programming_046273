@@ -1,6 +1,6 @@
 -module(matrix_utils).
 
--export([matrixMul/2]).
+-export([matricesMultiply/2]).
 
 % generate a matrix with X rows and Y columns with zeros
 getZeroMat(X, Y) ->
@@ -22,11 +22,11 @@ setElementMat(Row, Col, OldMat, NewVal) ->
 tuple2list(Tuple) when is_tuple(Tuple) -> [element(I, Tuple) || I <- lists:seq(1, tuple_size(Tuple))].
 
 % return the dot product of 2 tuples
-dotProduct(Vect1, RowIndex, Vect2, ColIndex, Pid) when
-  is_tuple(Vect1) andalso
-    is_tuple(Vect2) andalso
-    tuple_size(Vect1) == tuple_size(Vect2) ->
-  Pid ! {RowIndex, ColIndex, lists:sum(lists:zipwith(fun(X, Y) -> X * Y end, tuple2list(Vect1), tuple2list(Vect2)))}.
+dotProduct(V1, RowIndex, V2, ColIndex, Pid) when
+  is_tuple(V1) andalso
+    is_tuple(V2) andalso
+    tuple_size(V1) == tuple_size(V2) ->
+  Pid ! {RowIndex, ColIndex, lists:sum(lists:zipwith(fun(X, Y) -> X * Y end, tuple2list(V1), tuple2list(V2)))}.
 
 % creating new process for each Col to multiplied by given Row
 colLoop(_, _, _, ColIndex, _) when ColIndex =< 0 -> ok;
@@ -51,7 +51,7 @@ matrixMulAux(State, TemplateMat) ->
 
 
 % starting the loop, generating the template and collect all results into matrix
-matrixMul(Matrix1, Matrix2) ->
+matricesMultiply(Matrix1, Matrix2) ->
   rowLoop(Matrix1, tuple_size(Matrix1), Matrix2, self()),
   TemplateMat = getZeroMat(tuple_size(Matrix1), tuple_size(element(1, Matrix2))),
   Total = tuple_size(Matrix1) * tuple_size(element(1, Matrix2)),
