@@ -1,4 +1,4 @@
--module(matrix).
+-module(matrix_utils).
 
 -export([matrixMul/2]).
 

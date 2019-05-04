@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_2/matrix.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/matrix.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="612">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -205,7 +204,7 @@
       <workItem from="1556983114032" duration="9891000" />
       <workItem from="1556993843843" duration="239000" />
       <workItem from="1556994769152" duration="359000" />
-      <workItem from="1556996561908" duration="207000" />
+      <workItem from="1556996561908" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -305,11 +304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556994065979</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="better stopping condition">
+      <created>1556996914081</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556996914081</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31464000" />
+    <option name="totallyTimeSpent" value="31622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -329,7 +335,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.24052005" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.09967497" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -361,7 +367,8 @@
     <MESSAGE value="adding more test" />
     <MESSAGE value="adding matrix parallel multiplication" />
     <MESSAGE value="deleting all beam files" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleting all beam files" />
+    <MESSAGE value="better stopping condition" />
+    <option name="LAST_COMMIT_MESSAGE" value="better stopping condition" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -476,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="612">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
