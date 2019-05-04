@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW_2/matrix.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_2/main.beam" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_2/main.erl" beforeDir="false" />
-    </list>
+    <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,44 +16,7 @@
     <favorites_list name="Distributed_Functional_Programming_046273" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_1/hw1_game_test.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -232,7 +189,7 @@
       <workItem from="1555345749032" duration="597000" />
       <workItem from="1555841558463" duration="599000" />
       <workItem from="1556473649237" duration="367000" />
-      <workItem from="1556983114032" duration="9482000" />
+      <workItem from="1556983114032" duration="9891000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -318,15 +275,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556474006860</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding matrix parallel multiplication">
+      <created>1556993443014</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556993443014</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30250000" />
+    <option name="totallyTimeSpent" value="30659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -342,7 +305,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.08667389" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.08667389" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -372,7 +335,8 @@
     <MESSAGE value="minor change update zip file" />
     <MESSAGE value="change validation to function guards and update zip file" />
     <MESSAGE value="adding more test" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding more test" />
+    <MESSAGE value="adding matrix parallel multiplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding matrix parallel multiplication" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -478,7 +442,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_1/game.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
+        <state relative-caret-position="278">
           <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-end-line="16" />
         </state>
       </provider>
