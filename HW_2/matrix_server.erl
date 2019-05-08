@@ -1,6 +1,8 @@
--module(matrix_utils).
+-module(matrix_server).
+-author("Ido Yehezkel & Ohad Zohar").
 
--export([matricesMultiply/2]).
+%% API
+-export([loop_server/1]).
 
 % generate a matrix with X rows and Y columns with zeros
 getZeroMat(X, Y) ->
@@ -51,8 +53,25 @@ matrixMulAux(State, TemplateMat) ->
 
 
 % starting the loop, generating the template and collect all results into matrix
-matricesMultiply(Matrix1, Matrix2) ->
+matricesMultiply(Matrix1, Matrix2, ClientPid, MsgRef) ->
   rowLoop(Matrix1, tuple_size(Matrix1), Matrix2, self()),
   TemplateMat = getZeroMat(tuple_size(Matrix1), tuple_size(element(1, Matrix2))),
   Total = tuple_size(Matrix1) * tuple_size(element(1, Matrix2)),
-  matrixMulAux(Total, TemplateMat).
+  ResMatrix = matrixMulAux(Total, TemplateMat),
+  ClientPid ! {MsgRef, ResMatrix}.
+
+
+
+loop_server(State) ->
+  receive
+    {Pid, MsgRef, {multiple, Mat1, Mat2}} ->
+      spawn(fun() -> matricesMultiply(Mat1, Mat2, Pid, MsgRef) end),
+      erlang:display("!!!!"),
+      loop_server(State);
+    {Pid, MsgRef, get_version} ->
+      Pid ! {MsgRef, version_1},
+      loop_server(State);
+    sw_upgrade ->
+      ?MODULE:loop_server(State);
+    shutdown -> ok
+  end.
