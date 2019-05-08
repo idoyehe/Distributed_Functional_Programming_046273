@@ -9,6 +9,6 @@ restarter() ->
   Pid = spawn_link(matrix_server, matrix_server, []),
   register(matrix_server, Pid),
   receive
-    {'EXIT', Pid, shutdown} -> ok; % no crash
-    {'EXIT', Pid, _} -> restarter() % restart
+    {'EXIT', Pid, shutdown} -> ok; % no crash, shutdown request
+    {'EXIT', Pid, _} -> restarter() % restart, recover from crash
   end.
