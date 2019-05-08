@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HW_2/matrix_utils.erl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_2/server_supervisor.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/server_supervisor.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/matrix_server.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/matrix_server.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,19 +22,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
+        <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1448">
-              <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+            <state relative-caret-position="270">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
+        <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="270">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_2/matrix_utils.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -77,10 +87,10 @@
         <option value="$PROJECT_DIR$/HW_2/matrixUtils.erl" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/HW_2/matrix.erl" />
-        <option value="$PROJECT_DIR$/HW_2/matrix_utils.erl" />
         <option value="$PROJECT_DIR$/HW_2/server_supervisior.erl" />
-        <option value="$PROJECT_DIR$/HW_2/matrix_server.erl" />
         <option value="$PROJECT_DIR$/HW_2/server_supervisor.erl" />
+        <option value="$PROJECT_DIR$/HW_2/matrix_utils.erl" />
+        <option value="$PROJECT_DIR$/HW_2/matrix_server.erl" />
       </list>
     </option>
   </component>
@@ -95,7 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,7 +127,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,10 +361,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41003000" />
+    <option name="totallyTimeSpent" value="43300000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -362,7 +372,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.21387696" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.21321961" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -371,7 +381,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3060241" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.51137596" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -477,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/test_shapes.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="271" selection-start-line="271" selection-end-line="275" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weekly_exercises/client_server.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -526,24 +529,31 @@
         <state relative-caret-position="-5943" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/test_shapes.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="262" column="18" lean-forward="true" selection-start-line="262" selection-end-line="263" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/matrix_utils.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="46" selection-end-line="58" />
+        <state relative-caret-position="111">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1448">
-          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="270">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
