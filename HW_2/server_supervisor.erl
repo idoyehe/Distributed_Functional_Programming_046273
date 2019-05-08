@@ -9,9 +9,6 @@ restarter() ->
   Pid = spawn_link(matrix_server, matrix_server, []),
   register(matrix_server, Pid),
   receive
-    {'EXIT', Pid, normal} -> ok; % no crash
     {'EXIT', Pid, shutdown} -> ok; % no crash
-    {'EXIT', Pid, _} ->
-      erlang:display("Restarting server"),
-      restarter() % restart
+    {'EXIT', Pid, _} -> restarter() % restart
   end.

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW_2/server_supervisor.erl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_2/matrix_server.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/matrix_server.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/server_supervisor.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/server_supervisor.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,20 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
+            <state relative-caret-position="1448">
               <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="350">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -80,8 +79,8 @@
         <option value="$PROJECT_DIR$/HW_2/matrix.erl" />
         <option value="$PROJECT_DIR$/HW_2/matrix_utils.erl" />
         <option value="$PROJECT_DIR$/HW_2/server_supervisior.erl" />
-        <option value="$PROJECT_DIR$/HW_2/server_supervisor.erl" />
         <option value="$PROJECT_DIR$/HW_2/matrix_server.erl" />
+        <option value="$PROJECT_DIR$/HW_2/server_supervisor.erl" />
       </list>
     </option>
   </component>
@@ -220,7 +219,7 @@
       <workItem from="1556993843843" duration="239000" />
       <workItem from="1556994769152" duration="359000" />
       <workItem from="1556996561908" duration="365000" />
-      <workItem from="1557299774625" duration="9289000" />
+      <workItem from="1557299774625" duration="9381000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -341,11 +340,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557304890811</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="implement supervisor">
+      <created>1557309781167</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1557309781167</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40911000" />
+    <option name="totallyTimeSpent" value="41003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -400,7 +406,8 @@
     <MESSAGE value="better stopping condition" />
     <MESSAGE value="implement server loop" />
     <MESSAGE value="implement shutdown and mult" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement shutdown and mult" />
+    <MESSAGE value="implement supervisor" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement supervisor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -526,17 +533,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
+    <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="1448">
+          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
+    <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
