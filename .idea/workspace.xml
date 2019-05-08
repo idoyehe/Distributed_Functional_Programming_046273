@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2/matrix_server.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_2/matrix_server.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
+        <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="327">
+              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -67,10 +68,12 @@
         <option value="$PROJECT_DIR$/HW_2/matrixUtils.erl" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/HW_2/matrix.erl" />
+        <option value="$PROJECT_DIR$/HW_2/matrix_utils.erl" />
+        <option value="$PROJECT_DIR$/HW_2/matrix_server.erl" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="119" />
     <option name="y" value="44" />
     <option name="width" value="1400" />
@@ -148,7 +151,7 @@
       <module name="Distributed_Functional_Programming_046273" />
       <option name="allowRunningInParallel" value="false" />
       <option name="consoleArgs" value="" />
-      <option name="workingDirPath" value="C:\Users\IdoYe\IntelliJProjects\Distributed_Functional_Programming_046273\HW_2" />
+      <option name="workingDirPath" value="$PROJECT_DIR$/HW_2" />
       <method v="2" />
     </configuration>
     <configuration name="HW_3" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -205,6 +208,7 @@
       <workItem from="1556993843843" duration="239000" />
       <workItem from="1556994769152" duration="359000" />
       <workItem from="1556996561908" duration="365000" />
+      <workItem from="1557299774625" duration="4646000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -311,14 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556996914081</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="implement server loop">
+      <created>1557303798014</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1557303798014</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31622000" />
+    <option name="totallyTimeSpent" value="36268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -326,16 +337,16 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.21108742" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.21387696" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.09967497" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.2746988" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -368,7 +379,8 @@
     <MESSAGE value="adding matrix parallel multiplication" />
     <MESSAGE value="deleting all beam files" />
     <MESSAGE value="better stopping condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="better stopping condition" />
+    <MESSAGE value="implement server loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement server loop" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -481,10 +493,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl">
+    <entry file="file://$PROJECT_DIR$/HW_2/matrix.erl" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="-5943" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/matrix_utils.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="46" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
         </state>
       </provider>
     </entry>

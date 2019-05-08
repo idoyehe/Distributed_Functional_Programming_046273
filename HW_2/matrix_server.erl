@@ -2,7 +2,7 @@
 -author("Ido Yehezkel & Ohad Zohar").
 
 %% API
--export([loop_server/1]).
+-export([mult/2, shutdown/0]).
 
 % generate a matrix with X rows and Y columns with zeros
 getZeroMat(X, Y) ->
@@ -66,7 +66,6 @@ loop_server(State) ->
   receive
     {Pid, MsgRef, {multiple, Mat1, Mat2}} ->
       spawn(fun() -> matricesMultiply(Mat1, Mat2, Pid, MsgRef) end),
-      erlang:display("!!!!"),
       loop_server(State);
     {Pid, MsgRef, get_version} ->
       Pid ! {MsgRef, version_1},
@@ -74,4 +73,15 @@ loop_server(State) ->
     sw_upgrade ->
       ?MODULE:loop_server(State);
     shutdown -> ok
+  end.
+
+
+shutdown() ->
+  matrix_server ! shutdown.
+
+mult(Matrix1, Matrix2) ->
+  ClientPid = self(),
+  matrix_server ! {ClientPid, ClientPid, {multiple, Matrix1, Matrix2}},
+  receive
+    {ClientPid, ResMatrix} -> ResMatrix
   end.
