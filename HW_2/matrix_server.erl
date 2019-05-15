@@ -34,21 +34,20 @@ cleanup() -> % cleanup here procedure
 shutdown() -> % sending shutdown to server
   matrix_server ! shutdown.
 
+rpc(Request) ->
+  MsgRef = make_ref(),
+  matrix_server ! {self(), MsgRef, Request},
+  receive
+    {MsgRef, Response} -> Response
+  end.
+
 % send matrix multiply request and return the result.
 mult(Matrix1, Matrix2) ->
-  MsgRef = make_ref(),
-  matrix_server ! {self(), MsgRef, {multiple, Matrix1, Matrix2}},
-  receive
-    {MsgRef, ResMatrix} -> ResMatrix
-  end.
+  rpc({multiple, Matrix1, Matrix2}).
 
 % get version request and return the result.
 get_version() ->
-  MsgRef = make_ref(),
-  matrix_server ! {self(), MsgRef, get_version},
-  receive
-    {MsgRef, VersionIdentifier} -> VersionIdentifier
-  end.
+  rpc(get_version).
 
 start_server() ->
   spawn(server_supervisor, restarter, []).
