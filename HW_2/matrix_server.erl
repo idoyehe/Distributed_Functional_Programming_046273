@@ -50,7 +50,11 @@ get_version() ->
   rpc(get_version).
 
 start_server() ->
-  spawn(server_supervisor, restarter, []).
+  Pid = self(),
+  spawn(server_supervisor, restarter, [Pid]),
+  receive
+    server_up -> ok
+  end.
 
 explanation() ->
   io:format("The supervisor code and the server code should be in separated moduls because

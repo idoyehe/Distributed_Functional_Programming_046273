@@ -2,13 +2,15 @@
 -author("Ido Yehezkel & Ohad Zohar").
 
 %% API
--export([restarter/0]).
+-export([restarter/1]).
 
-restarter() ->
+
+restarter(Starter) ->
   process_flag(trap_exit, true),
-  Pid = spawn_link(matrix_server, matrix_server, []),
-  register(matrix_server, Pid),
+  Server_Pid = spawn_link(matrix_server, matrix_server, []),
+  register(matrix_server, Server_Pid),
+  Starter ! server_up,
   receive
-    {'EXIT', Pid, shutdown} -> ok; % no crash, shutdown request
-    {'EXIT', Pid, _} -> restarter() % restart, recover from crash
+    {'EXIT', Server_Pid, shutdown} -> ok; % no crash, shutdown request
+    {'EXIT', Server_Pid, _} -> restarter(Starter) % restart, recover from crash
   end.
