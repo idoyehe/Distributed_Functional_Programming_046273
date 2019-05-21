@@ -1,4 +1,4 @@
--module(tests).
+-module(test_1).
 -export([test_all/0]).
 
 test_all() ->
