@@ -8,7 +8,14 @@ startServers() ->
   supervisor_instance:start_link(servers_supervisor).
 
 
-stopServers() -> ok.
+stopServers() ->
+  supervisor:terminate_child(servers_supervisor, server1),
+  supervisor:terminate_child(servers_supervisor, server2),
+  supervisor:terminate_child(servers_supervisor, server3),
+  supervisor:delete_child(servers_supervisor, server1),
+  supervisor:delete_child(servers_supervisor, server2),
+  supervisor:delete_child(servers_supervisor, server3),
+  exit(whereis(servers_supervisor),shutdown).
 
 numberOfRunningFunctions(ServerId) when ServerId == 1 ->
   gen_server:call(server1, {get_active_jobs});
