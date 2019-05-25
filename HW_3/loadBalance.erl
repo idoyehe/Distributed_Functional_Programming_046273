@@ -15,7 +15,8 @@ stopServers() ->
   supervisor:delete_child(servers_supervisor, server1),
   supervisor:delete_child(servers_supervisor, server2),
   supervisor:delete_child(servers_supervisor, server3),
-  exit(whereis(servers_supervisor),shutdown).
+  SupervisorPid = whereis(servers_supervisor),
+  exit(SupervisorPid, shutdown).
 
 numberOfRunningFunctions(ServerId) when ServerId == 1 ->
   gen_server:call(server1, {get_active_jobs});
