@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="" />
+    <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="update submission file">
+      <change afterPath="$PROJECT_DIR$/HW_3/Homework3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/loadBalance.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/server_instance.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_3/supervisor_instance.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_3/main.erl" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HW_2/test.erl">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW_3/loadBalance.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2661" />
+            <state relative-caret-position="780">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW_3/server_instance.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -44,13 +54,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>shapesFilter</find>
       <find>function_clause</find>
       <find>spawn</find>
+      <find>shapesFilter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -79,6 +89,9 @@
         <option value="$PROJECT_DIR$/HW_2/matrix_server_test.erl" />
         <option value="$PROJECT_DIR$/HW_2/matrix_server_test.txt" />
         <option value="$PROJECT_DIR$/HW_2/matrix_server.erl" />
+        <option value="$PROJECT_DIR$/HW_3/supervisor_instance.erl" />
+        <option value="$PROJECT_DIR$/HW_3/loadBalance.erl" />
+        <option value="$PROJECT_DIR$/HW_3/server_instance.erl" />
       </list>
     </option>
   </component>
@@ -91,8 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,10 +116,17 @@
               <item name="Distributed_Functional_Programming_046273" type="462c0819:PsiDirectoryNode" />
               <item name="HW_2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Distributed_Functional_Programming_046273" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Distributed_Functional_Programming_046273" type="462c0819:PsiDirectoryNode" />
+              <item name="HW_3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,6 +134,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/weekly_exercises" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -141,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Erlang Console.HW_2">
+  <component name="RunManager" selected="Erlang Console.HW_3">
     <configuration name="HW_1" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Distributed_Functional_Programming_046273" />
       <option name="allowRunningInParallel" value="false" />
@@ -214,6 +233,8 @@
       <workItem from="1557328702110" duration="293000" />
       <workItem from="1557932980214" duration="2679000" />
       <workItem from="1558290268991" duration="524000" />
+      <workItem from="1558451795050" duration="1427000" />
+      <workItem from="1558769656929" duration="7405000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -390,21 +411,29 @@
       <option name="project" value="LOCAL" />
       <updated>1558290703100</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update submission file">
+      <created>1558451961029</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558451961029</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47515000" />
+    <option name="totallyTimeSpent" value="56347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.2196162" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49945828" visible="true" weight="0.2238806" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" x="0" y="0" width="1920" height="1040" id="Version Control" order="1" type="FLOATING" weight="0.32936078" />
@@ -413,7 +442,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.32837301" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.34994584" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -487,7 +516,8 @@
     <MESSAGE value="adding rpc function" />
     <MESSAGE value="edit submission file" />
     <MESSAGE value="half automation tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="half automation tests" />
+    <MESSAGE value="update submission file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update submission file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -543,13 +573,6 @@
     <entry file="file://$PROJECT_DIR$/HW_1/readme.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/shapes.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weekly_exercises/client_server.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -592,13 +615,6 @@
         <state relative-caret-position="-5943" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_1/test_shapes.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="262" column="18" lean-forward="true" selection-start-line="262" selection-end-line="263" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/matrix_server_test.erl" />
     <entry file="file://$PROJECT_DIR$/HW_2/server_supervisor.erl">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,23 +637,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HW_2/test.erl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Program Files/erl10.3/lib/stdlib-3.8/src/gen.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/shapes.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="51" column="12" selection-start-line="51" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_1/test_shapes.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="66" column="26" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/erl10.3/lib/stdlib-3.8/src/supervisor.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="591" selection-start-line="591" selection-end-line="591" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_3/supervisor_instance.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/matrix_utils.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="630">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_2/matrix_server.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_2/test.erl">
+    <entry file="file://$PROJECT_DIR$/HW_3/loadBalance.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2661" />
+        <state relative-caret-position="780">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_3/server_instance.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
       </provider>
     </entry>
   </component>
