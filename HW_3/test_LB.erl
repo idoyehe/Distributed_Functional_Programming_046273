@@ -25,7 +25,6 @@ battle() ->
   compile:file(loadBalance), compile:file(servers),
   F3 = fun() -> timer:sleep(3000), 3 * 3 end,
   F5 = fun() -> timer:sleep(10000), 4 * 4 end,
-  F6 = fun() -> timer:sleep(10), exit(stam) end,
   StarTime = calendar:local_time(),
 
   %%Divide 10 functions:
@@ -37,7 +36,6 @@ battle() ->
   timer:sleep(1000),
   status(StarTime),
   timer:sleep(1000),
-  myLoop(F6, 1),
   status(StarTime),
   timer:sleep(1000),
   status(StarTime),

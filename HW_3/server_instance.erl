@@ -25,19 +25,10 @@ handle_cast({new_job, From, MsgRef, Job_Function}, {Server_Name, Counter}) ->
   spawn(fun() -> execute_job(From, MsgRef, Job_Function, Server_Name) end),
   {noreply, {Server_Name, Counter + 1}}.
 
-job_wrapper(JobFunction) ->
-  F_result = JobFunction(),
-  exit({result, F_result}).
-
 execute_job(From, MsgRef, JobFunction, Server_Name) ->
-  process_flag(trap_exit, true),
-  JobPid = spawn_link(fun() -> job_wrapper(JobFunction) end),
-  receive
-    {'EXIT', JobPid, {result, F_result}} ->
-      From ! {MsgRef, F_result},
-      gen_server:cast(Server_Name, {job_finished});
-    {'EXIT', JobPid, _} -> gen_server:cast(Server_Name, {job_finished})
-  end.
+  F_result = JobFunction(),
+  From ! {MsgRef, F_result},
+  gen_server:cast(Server_Name, {job_finished}).
 
 handle_info(_Info, State) -> {noreply, State}.
 terminate(_Reason, _State) -> ok.

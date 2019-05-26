@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_3/loadBalance.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/loadBalance.erl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW_3/server_instance.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/server_instance.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_3/supervisor_instance.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/supervisor_instance.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_3/test_LB.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/test_LB.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW_3/test_LB.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+            <state relative-caret-position="240">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -34,13 +33,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW_3/loadBalance.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="540">
               <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW_3/supervisor_instance.erl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW_3/server_instance.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="584">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -105,10 +104,10 @@
         <option value="$PROJECT_DIR$/HW_2/matrix_server_test.erl" />
         <option value="$PROJECT_DIR$/HW_2/matrix_server_test.txt" />
         <option value="$PROJECT_DIR$/HW_2/matrix_server.erl" />
-        <option value="$PROJECT_DIR$/HW_3/test_LB.erl" />
         <option value="$PROJECT_DIR$/HW_3/loadBalance.erl" />
-        <option value="$PROJECT_DIR$/HW_3/server_instance.erl" />
         <option value="$PROJECT_DIR$/HW_3/supervisor_instance.erl" />
+        <option value="$PROJECT_DIR$/HW_3/server_instance.erl" />
+        <option value="$PROJECT_DIR$/HW_3/test_LB.erl" />
       </list>
     </option>
   </component>
@@ -121,6 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,8 +138,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +247,8 @@
       <workItem from="1558451795050" duration="1427000" />
       <workItem from="1558769656929" duration="13297000" />
       <workItem from="1558797713512" duration="2020000" />
-      <workItem from="1558888997857" duration="318000" />
+      <workItem from="1558888997857" duration="757000" />
+      <workItem from="1558897914644" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -453,14 +453,28 @@
       <option name="project" value="LOCAL" />
       <updated>1558788236521</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="implement stop supervisor">
+      <created>1558889375323</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1558889375323</updated>
+    </task>
+    <task id="LOCAL-00031" summary="adding submission zip">
+      <created>1558889474229</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1558889474229</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64577000" />
+    <option name="totallyTimeSpent" value="65095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -468,16 +482,16 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.9176346" visible="true" weight="0.23064516" />
-      <window_info id="Structure" order="6" sideWeight="0.082365364" side_tool="true" visible="true" weight="0.23064516" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.89413446" visible="true" weight="0.23134328" />
+      <window_info id="Structure" order="6" sideWeight="0.10586552" side_tool="true" weight="0.22867803" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" x="0" y="0" width="1920" height="1040" id="Version Control" order="1" type="FLOATING" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.32837301" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.24287222" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.30227518" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -529,7 +543,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make Erlang work with IntelliJ" />
     <MESSAGE value="adding all homework dirs" />
     <MESSAGE value="lecture 2 assignments" />
     <MESSAGE value="adding HW_1 files" />
@@ -554,7 +567,8 @@
     <MESSAGE value="update submission file" />
     <MESSAGE value="HW 3 first implementation commit" />
     <MESSAGE value="implement stop supervisor" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement stop supervisor" />
+    <MESSAGE value="adding submission zip" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding submission zip" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -712,24 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_3/test_LB.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW_3/loadBalance.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="540">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HW_3/server_instance.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -737,6 +737,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_3/server_instance.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_3/test_LB.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
