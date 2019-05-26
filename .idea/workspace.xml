@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_3/server_instance.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/server_instance.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_3/test_LB.erl" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/test_LB.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_3/ERLANG_HW3_204397368_305285694.zip" beforeDir="false" afterPath="$PROJECT_DIR$/HW_3/ERLANG_HW3_204397368_305285694.zip" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +22,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW_3/test_LB.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="-30">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
@@ -248,7 +246,7 @@
       <workItem from="1558769656929" duration="13297000" />
       <workItem from="1558797713512" duration="2020000" />
       <workItem from="1558888997857" duration="757000" />
-      <workItem from="1558897914644" duration="79000" />
+      <workItem from="1558897914644" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -467,22 +465,28 @@
       <option name="project" value="LOCAL" />
       <updated>1558889474229</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix handle in exception in job">
+      <created>1558898048485</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1558898048485</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65095000" />
+    <option name="totallyTimeSpent" value="65353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.89413446" visible="true" weight="0.23134328" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.89413446" visible="true" weight="0.23134328" />
       <window_info id="Structure" order="6" sideWeight="0.10586552" side_tool="true" weight="0.22867803" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" x="0" y="0" width="1920" height="1040" id="Version Control" order="1" type="FLOATING" weight="0.32936078" />
@@ -491,7 +495,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.32837301" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.30227518" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.4127844" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -543,7 +547,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding all homework dirs" />
     <MESSAGE value="lecture 2 assignments" />
     <MESSAGE value="adding HW_1 files" />
     <MESSAGE value="minor refactoring and code comments" />
@@ -568,7 +571,8 @@
     <MESSAGE value="HW 3 first implementation commit" />
     <MESSAGE value="implement stop supervisor" />
     <MESSAGE value="adding submission zip" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding submission zip" />
+    <MESSAGE value="fix handle in exception in job" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix handle in exception in job" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -749,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW_3/test_LB.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-30">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
