@@ -16,16 +16,11 @@ stopServers() ->
   supervisor:delete_child(servers_supervisor, server2),
   supervisor:delete_child(servers_supervisor, server3),
   SupervisorPid = whereis(servers_supervisor),
-  exit(SupervisorPid, shutdown).
+  exit(SupervisorPid, normal).
 
-numberOfRunningFunctions(ServerId) when ServerId == 1 ->
-  gen_server:call(server1, {get_active_jobs});
-
-numberOfRunningFunctions(ServerId) when ServerId == 2 ->
-  gen_server:call(server2, {get_active_jobs});
-
-numberOfRunningFunctions(ServerId) when ServerId == 3 ->
-  gen_server:call(server3, {get_active_jobs}).
+numberOfRunningFunctions(1) -> gen_server:call(server1, {get_active_jobs});
+numberOfRunningFunctions(2) -> gen_server:call(server2, {get_active_jobs});
+numberOfRunningFunctions(3) -> gen_server:call(server3, {get_active_jobs}).
 
 calcFun(ClientPID, JobFunction, MsgRef) ->
   ServersLoadList = [{server1, numberOfRunningFunctions(1)}, {server2, numberOfRunningFunctions(2)}, {server3, numberOfRunningFunctions(3)}],

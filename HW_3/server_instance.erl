@@ -18,7 +18,7 @@ init([Server_Name]) ->
 
 handle_call({get_active_jobs}, _From, {Server_Name, Counter}) -> {reply, Counter, {Server_Name, Counter}}.
 
-
+% getting cast request with the atom "job_finished" should update that certain job ended -> Counter = Counter - 1.
 handle_cast({job_finished}, {Server_Name, Counter}) -> {noreply, {Server_Name, Counter - 1}};
 
 handle_cast({new_job, From, MsgRef, Job_Function}, {Server_Name, Counter}) ->
@@ -28,7 +28,6 @@ handle_cast({new_job, From, MsgRef, Job_Function}, {Server_Name, Counter}) ->
 job_wrapper(JobFunction) ->
   F_result = JobFunction(),
   exit({result, F_result}).
-
 
 execute_job(From, MsgRef, JobFunction, Server_Name) ->
   process_flag(trap_exit, true),
