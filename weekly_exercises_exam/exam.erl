@@ -3,7 +3,7 @@
 -behaviour(gen_server).
 
 %% API
--export([next/1, find/1, isPrime/1, solver/2, add/1, sortComplexList/1, calc/1, calcOnServer/1, startServer/0, init/1, handle_call/3, calcFun/2]).
+-export([derive/2, discretDerv/2, genSeries/3, genSeries/4, isSeries/2, isAlgebric/1, integral/3, next/1, find/1, isPrime/1, solver/2, add/1, sortComplexList/1, calc/1, calcOnServer/1, startServer/0, init/1, handle_call/3, calcFun/2]).
 
 add([]) -> 0;
 add([H | T]) -> addAux(H, T, {complex, 0, 0}).
@@ -62,7 +62,7 @@ isPrime(N, M) ->
 next(Num) ->
   case isPrime(Num) of
     true -> [Num | fun() -> next(Num + 1) end];
-    false -> next(Num+1)
+    false -> next(Num + 1)
   end.
 
 find(Y) -> find(Y, next(1)).
@@ -71,3 +71,113 @@ find(Y, [H | T]) ->
     true -> H;
     false -> find(Y, T())
   end.
+
+integral(F, Start, End) ->
+  L = lists:seq(Start, End),
+  F1 = fun(PID, X) -> PID ! {X, F(X)} end,
+  F2 = fun(_Key, [Val], AccIn) -> AccIn + Val end,
+  mapreduce(F1, F2, 0, L).
+
+
+
+mapreduce(F1, F2, Acc0, L) ->
+  S = self(),
+  Pid = spawn(fun() -> reduce(S, F1, F2, Acc0, L) end),
+  receive
+    {Pid, Result} -> Result
+  end.
+reduce(Parent, F1, F2, Acc0, L) ->
+  process_flag(trap_exit, true),
+  ReducePid = self(),
+  lists:foreach(fun(X) ->
+    spawn_link(fun() -> F1(ReducePid, X) end)
+                end, L),
+  N = length(L),
+  Dict0 = dict:new(),
+  Dict1 = collect_replies(N, Dict0),
+  Acc = dict:fold(F2, Acc0, Dict1),
+  Parent ! {self(), Acc}.
+
+collect_replies(0, Dict) -> Dict;
+collect_replies(N, Dict) ->
+  receive
+    {Key, Val} ->
+      case dict:is_key(Key, Dict) of
+        true -> Dict1 = dict:append(Key, Val, Dict),
+          collect_replies(N, Dict1);
+        false -> Dict1 = dict:store(Key, [Val], Dict),
+          collect_replies(N, Dict1)
+      end;
+    {'EXIT', _, _} -> collect_replies(N - 1, Dict)
+  end.
+
+isAlgebric(L) when length(L) == 1 -> true;
+isAlgebric(L) when length(L) == 2 -> true;
+isAlgebric([H | [S_H | S_T]]) -> isAlgebric([S_H | S_T], S_H - H).
+
+isAlgebric([_H | []], _D) -> true;
+isAlgebric([H | [S_H | S_T]], D) ->
+  case S_H - H == D of
+    true -> isAlgebric([S_H | S_T], D);
+    false -> false
+  end.
+
+isSeries(_F, []) -> true;
+isSeries(_F, L) when length(L) == 1 -> true;
+isSeries(F, [H | [S_H | S_T]]) ->
+  case F(H) == S_H of
+    true -> isSeries(F, [S_H | S_T]);
+    false -> false
+  end.
+
+genSeries(algebraic, A0, D, N) ->
+  F = fun(X) -> X + D end,
+  genSeries(special, A0, F, N, []);
+
+genSeries(geomtric, A0, Q, N) ->
+  F = fun(X) -> X * Q end,
+  genSeries(special, A0, F, N, []);
+
+genSeries(special, A0, F, N) ->
+  genSeries(special, A0, F, N, []).
+
+
+genSeries(special, _A0, _F, 0, L) -> L;
+genSeries(special, A0, F, N, L) ->
+  R = F(A0),
+  genSeries(special, R, F, N - 1, L ++ [A0]).
+
+
+genSeries(algebraic, A0, D) ->
+  F = fun(X) -> X + D end,
+  genSeries(special, A0, F);
+
+genSeries(geomtric, A0, Q) ->
+  F = fun(X) -> X * Q end,
+  genSeries(special, A0, F);
+
+genSeries(special, A0, F) ->
+  [A0 | fun() -> genSeries(special, F(A0), F) end].
+
+
+discretDerv(F, [H | T]) ->
+  discretDerv(F, [H | T], []).
+
+discretDerv(_F, [], L) -> L;
+discretDerv(F, [H | T], L) ->
+  discretDerv(F, T, L ++ [(F(H + 1) - F(H - 1)) / 2]).
+
+
+indexList(L, []) ->
+  indexList(L, [], 1).
+
+indexList([], L, _N) -> L;
+indexList([H | T], L, N) ->
+  indexList(T, L ++ [{N, H}], N + 1).
+
+derive(F, List) ->
+  IndexList = indexList(List, []),
+  F1 = fun(PID, {I, X}) -> PID ! {I, (F(X + 1) - F(X - 1)) / 2} end,
+  F2 = fun(Key, [Val], ACCIN) -> ACCIN ++ [{Key, Val}] end,
+  RES = mapreduce(F1, F2, [], IndexList),
+  lists:map(fun(TUP) -> element(2, TUP) end, lists:sort(fun(A, B) -> element(1, A) =< element(1, B) end, RES)).
