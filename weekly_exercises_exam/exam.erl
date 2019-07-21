@@ -194,9 +194,8 @@ loop2018A(X) ->
     {getCounter, From, MsgRef} ->
       From ! {MsgRef, X},
       loop2018A(X);
-    {stop} -> ok
+    {stop} -> io:format("Server stopped~n"), ok
   after 1000 ->
     loop2018A(X - 1)
-  end,
-  io:format("Server stopped~n").
-
+  end.
+  
