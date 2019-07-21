@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weekly_exercises_exam/exam.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+            <state relative-caret-position="-43">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -231,7 +231,7 @@
       <workItem from="1558897914644" duration="337000" />
       <workItem from="1558898478430" duration="48000" />
       <workItem from="1561191034434" duration="349000" />
-      <workItem from="1563516858667" duration="27049000" />
+      <workItem from="1563516858667" duration="31317000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -478,11 +478,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563628093773</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="adding solutions from exams">
+      <created>1563699565569</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1563699565569</updated>
+    </task>
+    <task id="LOCAL-00037" summary="adding solutions from exams">
+      <created>1563700261269</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1563700261269</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92799000" />
+    <option name="totallyTimeSpent" value="97067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,7 +524,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32837301" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3575298" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.20476706" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -763,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weekly_exercises_exam/exam.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+        <state relative-caret-position="-43">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>

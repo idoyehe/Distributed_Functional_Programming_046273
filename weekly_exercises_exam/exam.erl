@@ -53,10 +53,10 @@ isPrime(N) when N < 2 -> false;
 isPrime(N) -> isPrime(N, 2).
 isPrime(N, N) -> true;
 isPrime(N, M) ->
-  ChPrime = N rem M,
-  if
-    ChPrime == 0 -> false;
-    true -> isPrime(N, M + 1)
+  case N rem M == 0 of
+    true -> false;
+    false -> isPrime(N, M + 1)
+
   end.
 
 next(Num) ->
@@ -194,8 +194,9 @@ loop2018A(X) ->
     {getCounter, From, MsgRef} ->
       From ! {MsgRef, X},
       loop2018A(X);
-    {stop} -> io:format("Server stopped"), ok
+    {stop} -> ok
   after 1000 ->
     loop2018A(X - 1)
-  end.
+  end,
+  io:format("Server stopped~n").
 
