@@ -3,7 +3,7 @@
 -behaviour(gen_server).
 
 %% API
--export([derive/2, discretDerv/2, genSeries/3, genSeries/4, isSeries/2, isAlgebric/1, integral/3, next/1, find/1, isPrime/1, solver/2, add/1, sortComplexList/1, calc/1, calcOnServer/1, startServer/0, init/1, handle_call/3, calcFun/2]).
+-export([calcFuns2018/1, derive/2, discretDerv/2, genSeries/3, genSeries/4, isSeries/2, isAlgebric/1, integral/3, next/1, find/1, isPrime/1, solver/2, add/1, sortComplexList/1, calc/1, calcOnServer/1, startServer/0, init/1, handle_call/3, calcFun/2]).
 
 add([]) -> 0;
 add([H | T]) -> addAux(H, T, {complex, 0, 0}).
@@ -168,16 +168,18 @@ discretDerv(F, [H | T], L) ->
   discretDerv(F, T, L ++ [(F(H + 1) - F(H - 1)) / 2]).
 
 
-indexList(L, []) ->
-  indexList(L, [], 1).
-
-indexList([], L, _N) -> L;
-indexList([H | T], L, N) ->
-  indexList(T, L ++ [{N, H}], N + 1).
 
 derive(F, List) ->
-  IndexList = indexList(List, []),
+  IndexList = lists:zip(lists:seq(1,length(List)),List),
   F1 = fun(PID, {I, X}) -> PID ! {I, (F(X + 1) - F(X - 1)) / 2} end,
   F2 = fun(Key, [Val], ACCIN) -> ACCIN ++ [{Key, Val}] end,
   RES = mapreduce(F1, F2, [], IndexList),
   lists:map(fun(TUP) -> element(2, TUP) end, lists:sort(fun(A, B) -> element(1, A) =< element(1, B) end, RES)).
+
+calcFuns2018([]) -> [];
+calcFuns2018([H | T]) ->
+  calcFuns2018([H | T], []).
+
+calcFuns2018([], L) -> L;
+calcFuns2018([H | T], L) ->
+  calcFuns2018(T, L ++ [H()]).

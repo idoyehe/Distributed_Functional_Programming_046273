@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23885ccb-6839-499e-a02b-be0a1271fcad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weekly_exercises_exam/exam.erl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weekly_exercises/client_server.erl" beforeDir="false" afterPath="$PROJECT_DIR$/weekly_exercises_exam/client_server.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weekly_exercises/fib.erl" beforeDir="false" afterPath="$PROJECT_DIR$/weekly_exercises_exam/fib.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weekly_exercises/guardedFunction.erl" beforeDir="false" afterPath="$PROJECT_DIR$/weekly_exercises_exam/guardedFunction.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weekly_exercises/myList.erl" beforeDir="false" afterPath="$PROJECT_DIR$/weekly_exercises_exam/myList.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weekly_exercises/mymath.erl" beforeDir="false" afterPath="$PROJECT_DIR$/weekly_exercises_exam/mymath.erl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weekly_exercises_exam/exam.erl" beforeDir="false" afterPath="$PROJECT_DIR$/weekly_exercises_exam/exam.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weekly_exercises_exam/exam.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+            <state relative-caret-position="458">
+              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
             </state>
           </provider>
         </entry>
@@ -49,6 +44,7 @@
       <find>spawn</find>
       <find>shapesFilter</find>
       <find>tempTest</find>
+      <find>indexList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,7 +231,7 @@
       <workItem from="1558897914644" duration="337000" />
       <workItem from="1558898478430" duration="48000" />
       <workItem from="1561191034434" duration="349000" />
-      <workItem from="1563516858667" duration="10565000" />
+      <workItem from="1563516858667" duration="27049000" />
     </task>
     <task id="LOCAL-00001" summary="make Erlang work with IntelliJ">
       <created>1553850439661</created>
@@ -468,11 +464,34 @@
       <option name="project" value="LOCAL" />
       <updated>1558898511178</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="adding solutions from exams">
+      <created>1563543756093</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1563543756093</updated>
+    </task>
+    <task id="LOCAL-00035" summary="adding solutions from exams">
+      <created>1563628093773</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1563628093773</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76315000" />
+    <option name="totallyTimeSpent" value="92799000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -482,7 +501,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5005417" side_tool="true" weight="0.19189766" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.89413446" visible="true" weight="0.23933902" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.89413446" visible="true" weight="0.23933902" />
       <window_info id="Structure" order="6" sideWeight="0.10586552" side_tool="true" weight="0.22867803" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" x="0" y="0" width="1920" height="1040" id="Version Control" order="1" type="FLOATING" weight="0.32936078" />
@@ -490,8 +509,8 @@
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.32837301" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.26868907" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32837301" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3575298" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -512,7 +531,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding HW_1 files" />
     <MESSAGE value="minor refactoring and code comments" />
     <MESSAGE value="adding zip file submission" />
     <MESSAGE value="minor change update zip file" />
@@ -537,7 +555,8 @@
     <MESSAGE value="adding submission zip" />
     <MESSAGE value="fix handle in exception in job" />
     <MESSAGE value="update submission zip" />
-    <option name="LAST_COMMIT_MESSAGE" value="update submission zip" />
+    <MESSAGE value="adding solutions from exams" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding solutions from exams" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Distributed_Functional_Programming_046273.iml">
@@ -735,10 +754,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files/erl10.3/lib/stdlib-3.8/src/dict.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="459" selection-start-line="459" selection-end-line="459" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weekly_exercises_exam/exam.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+        <state relative-caret-position="458">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
         </state>
       </provider>
     </entry>
