@@ -3,7 +3,7 @@
 -behaviour(gen_server).
 
 %% API
--export([calcFuns2018/1, derive/2, discretDerv/2, genSeries/3, genSeries/4, isSeries/2, isAlgebric/1, integral/3, next/1, find/1, isPrime/1, solver/2, add/1, sortComplexList/1, calc/1, calcOnServer/1, startServer/0, init/1, handle_call/3, calcFun/2]).
+-export([start2018A/0, loop2018A/1, calcFuns2018/1, derive/2, discretDerv/2, genSeries/3, genSeries/4, isSeries/2, isAlgebric/1, integral/3, next/1, find/1, isPrime/1, solver/2, add/1, sortComplexList/1, calc/1, calcOnServer/1, startServer/0, init/1, handle_call/3, calcFun/2]).
 
 add([]) -> 0;
 add([H | T]) -> addAux(H, T, {complex, 0, 0}).
@@ -170,7 +170,7 @@ discretDerv(F, [H | T], L) ->
 
 
 derive(F, List) ->
-  IndexList = lists:zip(lists:seq(1,length(List)),List),
+  IndexList = lists:zip(lists:seq(1, length(List)), List),
   F1 = fun(PID, {I, X}) -> PID ! {I, (F(X + 1) - F(X - 1)) / 2} end,
   F2 = fun(Key, [Val], ACCIN) -> ACCIN ++ [{Key, Val}] end,
   RES = mapreduce(F1, F2, [], IndexList),
@@ -183,3 +183,19 @@ calcFuns2018([H | T]) ->
 calcFuns2018([], L) -> L;
 calcFuns2018([H | T], L) ->
   calcFuns2018(T, L ++ [H()]).
+
+
+start2018A() -> register(my_server, spawn(?MODULE, loop2018A, [42])).
+
+loop2018A(X) ->
+  receive
+    {increaseCounter} -> loop2018A(X + 1);
+    {addToCounter, Y} -> loop2018A(X + Y);
+    {getCounter, From, MsgRef} ->
+      From ! {MsgRef, X},
+      loop2018A(X);
+    {stop} -> io:format("Server stopped"), ok
+  after 1000 ->
+    loop2018A(X - 1)
+  end.
+
