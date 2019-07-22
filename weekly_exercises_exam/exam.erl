@@ -21,7 +21,7 @@ sortComplexList(List) when is_list(List) ->
   lists:sort(fun(A, B) -> dist(A) =< dist(B) end, List).
 
 wrapper([]) -> [];
-wrapper([{add, List} | T]) -> [add(List) | wrapper(T)];
+wrapper([{add, List} | T]) -> [add(wrapper(List)) | wrapper(T)];
 wrapper([H | T]) -> [H | wrapper(T)].
 
 calc({add, List}) -> add(wrapper(List)).
